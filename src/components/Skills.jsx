@@ -32,7 +32,7 @@ const Skills = () => {
   };
 
   return (
-    <div className='flex flex-col md:flex-row  py-10 bg-[#2ADCFC]'>
+    <div className='flex flex-col md:flex-row  py-10 bg-[#2ADCFC] mb-10'>
       
 
       <div className='flex flex-wrap justify-end flex-grow gap-4 '>

@@ -5,7 +5,7 @@ import { CardEffectMain } from '../components/Main/CardEffectMain';
 const About = () => {
   return (
     <div className="flex w-full gap-8 p-10 mx-auto bg-[#101010]">
-      <div className="flex justify-center flex-1">
+      <div className="flex flex-wrap justify-center flex-1">
         <img
           src={AboutAvatar}
           className="border border-[#2ADCFC] bg-cover rounded-[50px] w-auto h-auto object-cover"
@@ -13,7 +13,7 @@ const About = () => {
         />
       </div>
 
-      <div className="relative flex-1 p-8 rounded-[50px] overflow-hidden border border-[#666666]">
+      <div className="relative flex-1 p-8 rounded-[50px] overflow-hidden border border-[#666666] flex-wrap">
         {/* CardEffectMain Background */}
         <CardEffectMain className="absolute inset-0 z-0 w-full h-full" />
 
