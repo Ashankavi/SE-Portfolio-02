@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import Mobile from '../assets/Project/Mobile.jpg';
 import Desktop from '../assets/Project/Desktop.jpg';
+import Background from '../assets/Services/Background.png';
+
 
 const Project = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -48,7 +50,7 @@ const Project = () => {
   }, []);
 
   return (
-    <div className='relative flex flex-col h-auto px-4 bg-black rounded-b-[50px]'>
+    <div className='relative flex flex-col h-auto px-4 bg-black rounded-b-[50px] bg-center bg-no-repeat bg-cover ' style={{ backgroundImage: `url(${Background})` }}>
 
       <div className="flex flex-col items-center justify-center my-8 text-center ">
         <h1 className="font-sans text-3xl md:text-4xl font-bold text-[#2ADCFC] uppercase">WORKING PROCESS</h1>
