@@ -74,7 +74,7 @@ export function Education() {
         
         <div className="flex flex-col mb-8 text-center ">
             <h1 className="font-sans text-3xl md:text-4xl font-bold text-[#2ADCFC] uppercase">MY Career</h1>
-            <h1 className="font-sans text-4xl md:text-4xl font-bold text-[#ffffff] uppercase">Experience and Education</h1>
+            <h1 className="font-sans text-4xl md:text-5xl font-bold text-[#ffffff] uppercase">Experience and Education</h1>
         </div>
 
       <EducationEffect content={content} />

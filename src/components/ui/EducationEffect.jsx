@@ -84,7 +84,7 @@ export const EducationEffect = ({
       <div
         style={{ background: backgroundGradient }}
         className={cn(
-          "hidden lg:block h-80 w-80 rounded-md bg-white sticky top-10 overflow-hidden",
+          "hidden lg:block h-80 w-80 rounded-[30px] border-4 border-[#ffffff]  bg-white sticky top-10 overflow-hidden",
           contentClassName
         )}>
         {content[activeCard].content ?? null}

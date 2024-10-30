@@ -6,6 +6,8 @@ import { Services } from './components/Services'
 import { Education } from './components/Education'
 import Certificate from './components/Certificate'
 import Project from './components/Project'
+import SocialMedia from './components/SocialMedia'
+import Contact from './components/Contact'
 
 
 
@@ -21,7 +23,8 @@ function App() {
         <Services/>
         <Education/>
         <Certificate/>
-        {/* <Project/> */}
+        <Project/>
+        <Contact/>
 
 
       </div>

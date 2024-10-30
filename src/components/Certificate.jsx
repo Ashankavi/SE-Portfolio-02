@@ -53,13 +53,13 @@ const Certificate = () => {
 
       <div className="flex flex-col items-center justify-center my-8 text-center ">
         <h1 className="font-sans text-3xl md:text-4xl font-bold text-[#2ADCFC] uppercase">Achievements</h1>
-        <h1 className="font-sans text-4xl md:text-4xl font-bold text-[#ffffff] uppercase">My Certificates</h1>
+        <h1 className="font-sans text-4xl md:text-5xl font-bold text-[#ffffff] uppercase">My Certificates</h1>
       </div>
 
       <div className='flex flex-row items-center justify-center gap-8 px-4'>
         {getVisibleCertificates().map((cert, index) => (
           <div key={index} className='flex flex-grow flex-col h-auto bg-[#0B0D0E] border rounded-[30px] justify-center border-[#2ADCFC]'>
-            <img className='p-4 rounded-2xl' src={CertificateImage} alt={cert.title} />
+            <img className='p-4 rounded-[30px]' src={CertificateImage} alt={cert.title} />
             <h1 className='text-1xl text-center md:text-2xl font-bold text-[#2ADCFC] uppercase'>{cert.title}</h1>
             <h1 className='text-xl text-center md:text-l font-bold text-[#ffffff] uppercase mb-4'>{cert.date}</h1>
           </div>

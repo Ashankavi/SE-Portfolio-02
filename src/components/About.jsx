@@ -18,7 +18,7 @@ const About = () => {
         <CardEffectMain className="absolute inset-0 z-0 w-full h-full" />
 
         <div className="relative z-10 p-4">
-          <h2 className="font-sans text-2xl font-bold text-[#2ADCFC]">ABOUT ME</h2>
+          <h2 className="font-sans text-3xl font-bold text-[#2ADCFC]">ABOUT ME</h2>
           <h1 className="font-sans text-4xl font-bold text-[#ffffff] my-8">
             World leading Creative Front-End Developer
           </h1>

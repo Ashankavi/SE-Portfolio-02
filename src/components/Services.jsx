@@ -11,10 +11,10 @@ export function Services() {
       style={{ backgroundImage: `url(${Background})` }}
     >
       <div className="flex flex-col items-center justify-center text-center ">
-        <h1 className="font-sans text-4xl font-bold text-[#2ADCFC] uppercase">
+        <h1 className="font-sans text-3xl md:text-4xl font-bold text-[#2ADCFC] uppercase">
           WHAT WE DO
         </h1>
-        <h1 className="font-sans text-5xl font-bold text-[#ffffff] uppercase">
+        <h1 className="font-sans text-4xl md:text-5xl font-bold text-[#ffffff] uppercase">
           Services and Solutions
         </h1>
       </div>
