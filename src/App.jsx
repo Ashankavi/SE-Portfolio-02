@@ -9,6 +9,7 @@ import Project from './components/Project'
 import SocialMedia from './components/SocialMedia'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Navbar from './components/Navbar'
 
 
 
@@ -18,6 +19,7 @@ function App() {
   return (
 
       <div className=' bg-[#101010]'>
+        <Navbar/>
         <Hero/>
         <About/>
         <Skills/>
