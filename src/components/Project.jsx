@@ -30,7 +30,7 @@ const Project = () => {
     const getVisibleCertificates = () => {
       return isMobile
         ? [certificates[currentIndex]]
-        : certificates.slice(currentIndex, currentIndex + 3).concat(
+        : certificates.slice(currentIndex, currentIndex + 4).concat(
             certificates.slice(0, Math.max(0, 4 - (certificates.length - currentIndex)))
           );
     };
@@ -48,8 +48,8 @@ const Project = () => {
       <div className='relative flex flex-col h-auto p-4 bg-black rounded-b-[50px]'>
   
         <div className="flex flex-col items-center justify-center my-8 ">
-          <h1 className="font-sans text-4xl font-bold text-[#2ADCFC] uppercase">WHAT WE DO</h1>
-          <h1 className="font-sans text-5xl font-bold text-[#ffffff] uppercase">Services and Solutions</h1>
+          <h1 className="font-sans text-4xl font-bold text-[#2ADCFC] uppercase">WORKING PROCESS</h1>
+          <h1 className="font-sans text-5xl font-bold text-[#ffffff] uppercase">Latest Working Project</h1>
         </div>
   
         <div className='flex flex-row items-center justify-center gap-8 px-4'>
