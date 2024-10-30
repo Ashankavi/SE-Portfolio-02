@@ -17,10 +17,10 @@ function App() {
       <div className=' bg-[#101010]'>
         <Hero/>
         <About/>
-        {/* <Skills/>
+        <Skills/>
         <Services/>
         <Education/>
-        <Certificate/>
+        {/* <Certificate/>
         <Project/> */}
 
 

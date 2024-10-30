@@ -9,8 +9,10 @@ import ReactIcon from '../assets/Skills/React 1.png';
 import Tailwind from '../assets/Skills/Tailwind 1.png';
 
 const Skills = () => {
+  const isMobile = window.innerWidth <= 768;
+  
   const marqueeAnimation = {
-    animation: 'marquee 10s linear infinite',
+    animation: isMobile ? 'marquee 5s linear infinite' : 'marquee 10s linear infinite', // Faster speed on mobile
   };
 
   const containerStyle = {
@@ -27,22 +29,20 @@ const Skills = () => {
 
   const imageStyle = {
     width: 'auto',
-    height: '80px',
-    marginRight: '20px', 
+    height: isMobile ? '50px' : '80px', // Smaller size for mobile screens
+    marginRight: '20px',
   };
 
   return (
-    <div className='flex flex-col md:flex-row  py-10 bg-[#2ADCFC] mb-10'>
-      
-
-      <div className='flex flex-wrap justify-end flex-grow gap-4 '>
+    <div className="flex flex-col md:flex-row py-10 bg-[#2ADCFC] mb-10">
+      <div className="flex flex-wrap justify-end flex-grow gap-4">
         <div style={containerStyle}>
           <div style={marqueeStyle}>
             {[CSharp, CSS, HTML1, Java, JS, PS, ReactIcon, Tailwind].map((img, index) => (
-              <img key={index} src={img} style={imageStyle} alt={`Skill ${index}`} />
+              <img key={index} src={img} style={imageStyle} className="skill-image" alt={`Skill ${index}`} />
             ))}
             {[CSharp, CSS, HTML1, Java, JS, PS, ReactIcon, Tailwind].map((img, index) => (
-              <img key={`repeat-${index}`} src={img} style={imageStyle} alt={`Skill ${index}`} />
+              <img key={`repeat-${index}`} src={img} style={imageStyle} className="skill-image" alt={`Skill ${index}`} />
             ))}
           </div>
         </div>
@@ -51,6 +51,7 @@ const Skills = () => {
   );
 };
 
+// CSS keyframes for marquee animation
 const keyframes = `
   @keyframes marquee {
     0% {

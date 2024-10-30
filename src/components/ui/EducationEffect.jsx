@@ -50,7 +50,7 @@ export const EducationEffect = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-[500px] rounded-[50px] p-10"
+      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-[500px] rounded-[50px] p-10 border-4 border-[#2ADCFC]"
       ref={ref}>
       <div className="relative flex items-start px-4 div">
         <div className="max-w-2xl">
