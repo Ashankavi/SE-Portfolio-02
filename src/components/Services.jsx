@@ -7,9 +7,7 @@ import Background from '../assets/Services/Background.png';
 export function Services() {
   return (
     <div
-      className="justify-center flex-grow w-full h-full p-10 bg-center bg-no-repeat bg-cover rounded-[50px]"
-      style={{ backgroundImage: `url(${Background})` }}
-    >
+      className="justify-center flex-grow w-full h-full p-10 bg-center bg-no-repeat bg-cover rounded-[50px]" style={{ backgroundImage: `url(${Background})` }}>
       <div className="flex flex-col items-center justify-center text-center ">
         <h1 className="font-sans text-3xl md:text-4xl font-bold text-[#2ADCFC] uppercase">
           WHAT WE DO

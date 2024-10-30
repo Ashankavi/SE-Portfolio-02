@@ -8,6 +8,7 @@ import Certificate from './components/Certificate'
 import Project from './components/Project'
 import SocialMedia from './components/SocialMedia'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 
 
@@ -25,6 +26,7 @@ function App() {
         <Certificate/>
         <Project/>
         <Contact/>
+        <Footer/>
 
 
       </div>
