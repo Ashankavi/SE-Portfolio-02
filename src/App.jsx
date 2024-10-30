@@ -11,28 +11,20 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 
-
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-
-      <div className=' bg-[#101010]'>
-        <Navbar/>
-        <Hero/>
-        <About/>
-        <Skills/>
-        <Services/>
-        <Education/>
-        <Certificate/>
-        <Project/>
-        <Contact/>
-        <Footer/>
-
-
-      </div>
-
+    <div className='bg-[#101010]'>
+      <Navbar />
+      <div id="home"><Hero /></div>
+      <div id="about"><About /></div>
+      <div id="skills"><Skills /></div>
+      <div id="services"><Services /></div>
+      <div id="education"><Education /></div>
+      <div id="certificate"><Certificate /></div>
+      <div id="project"><Project /></div>
+      <div id="contact"><Contact /></div>
+      <Footer />
+    </div>
   )
 }
 

@@ -12,18 +12,18 @@ const Navbar = ({ handleNavClick }) => {
 
   const activeLinkStyle = {
     textDecoration: 'underline',
-    textDecorationColor: '#2563eb',
+    textDecorationColor: '#2ADCFC',
     textDecorationThickness: '2px',
     textUnderlineOffset: '4px',
     color: '#08D665'
   };
 
   const defaultLinkStyle = {
-    color: '#08D665'
+    color: '#2ADCFC'
   };
 
   return (
-    <div className='flex items-center justify-between max-w-auto font-bold px-10 text-black bg-[#000000] border-b-[0.1px] border-[#08D665] z-50'>
+    <div className='flex items-center justify-between max-w-auto font-bold px-10 text-black bg-[#000000] z-50'>
       <img className='h-[20px] my-5' src={Logo} alt="Logo" />
       <h1 className='w-full text-3xl font-bold text-[#00df9a]'></h1>
       <ul className='hidden font-normal tracking-wide uppercase lg:flex'>

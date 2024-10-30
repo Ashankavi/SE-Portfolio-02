@@ -1,8 +1,13 @@
 import React from 'react';
 import AboutAvatar from '../assets/About/AboutIMG.png';
+import MyCV from '../assets/About/CV.pdf';
 import { CardEffectMain } from '../components/Main/CardEffectMain';
 
 const About = () => {
+  const handlePreviewCV = () => {
+    window.open(MyCV, '_blank');
+  };
+
   return (
     <div className="flex flex-col sm:flex-row w-full gap-8 p-4 sm:p-10 mx-auto bg-[#101010]">
       {/* Section 01 */}
@@ -32,7 +37,11 @@ const About = () => {
             and dedicated to work.
           </p>
 
-          <button className="py-4 px-8 rounded-[6px] bg-[#26a8be] text-[#ffffff] mt-4 uppercase">Download CV</button>
+          <button 
+            onClick={handlePreviewCV} 
+            className="py-4 px-8 rounded-[6px] bg-[#26a8be] text-[#ffffff] mt-4 uppercase">
+            Download CV
+          </button>
         </div>
       </div>
     </div>
